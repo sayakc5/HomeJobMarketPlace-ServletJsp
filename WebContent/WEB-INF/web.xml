@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>HomeJobMarketPlaceServlet</display-name>
+  <welcome-file-list>
+    <welcome-file>/WEB-INF/pages/Login.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>com.apostek.HomeJobMarketPlace.Controller.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>regServlet</servlet-name>
+    <servlet-class>com.apostek.HomeJobMarketPlace.Controller.Registration</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>regServlet</servlet-name>
+    <url-pattern>/regServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ChangePassword</servlet-name>
+    <servlet-class>com.apostek.HomeJobMarketPlace.Controller.ChangePassword</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChangePassword</servlet-name>
+    <url-pattern>/ChangePassword</url-pattern>
+  </servlet-mapping>
+</web-app>
